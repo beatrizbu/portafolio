@@ -1,4 +1,49 @@
-*
+@import "compass/css3";
+
+/*body {background-color: #333;}
+a, a:link, a:visited, a:hover, a:active {text-decoration:none;}*/
+
+
+
+@mixin btn ($color, $fsize, $radius) {
+  transition: all .25s ease-in-out;
+
+	border:solid .15em darken($color, 10%);
+	color: lighten($color, 80%) !important;
+	display: inline-block;
+	font-family: Century Gothic;
+	font-size: $fsize; line-height: $fsize;
+	height: $fsize; width: $fsize;
+  margin: 1em;
+	padding: $fsize/2;
+  position:relative;
+	text-align:center;
+
+	$color2: darken($color, 15%);
+	background-color: $color; // Old browsers
+	@include filter-gradient($color, $color2, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  $color 43%,$color2 100%));
+	@include border-radius($radius);
+
+	@include text-shadow (darken($color,10%) .1em .1em .0em, darken($color,20%) -.05em -.05em .1em);/**/
+	i {font-size:$fsize;}
+  z-index:1;
+  @include box-shadow(0 0 0 .25em #333, 0 0 0 .75em $color);
+
+  &:hover {
+    @include border-radius($radius);
+    transition: all .25s ease-in-out;
+    @include box-shadow(0 0 0 0em #333, 0 0 0 0em transparent);
+  }
+}
+
+
+.btn-fb {@include btn(#3a589c, 1.3em, 50%);}
+.btn-tw {@include btn(#12acee, 1.3em, 10%);}
+.btn-li {@include btn(#0372b7, 1.3em, 0%);}
+.btn-gp {@include btn(#db4e32, 1.3em, 40%);}
+
+
 {
 margin:0px;
 padding:0px;
@@ -268,6 +313,6 @@ f   family-font: Helvetica Neue;
     padding-right: 0;
     padding-left: 0;
   }
-  body {background-image: url(5-full.jpg); background-repeat: no-repeat;  
+  body {background-image: url(5-full.jpg); background-repeat: no-repeat;
 
 }

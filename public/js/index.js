@@ -1,2 +1,2 @@
-$("#menu").click(function(){$(this).toggleClass("activemenu");});
-console.log("I see this");
+// $("#menu").click(function(){$(this).toggleClass("activemenu");});
+// console.log("I see this");
