@@ -13,10 +13,10 @@
 <link rel="stylesheet" href="css/reset.css">
 
 <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
-<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
 
 <!-- Custom styles for this template -->
-<link href="justified-nav.css" rel="stylesheet">
+<!-- <link href="justified-nav.css" rel="stylesheet"> -->
+<link href="navbar-fixed-top.css" rel="stylesheet">
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,64 +32,89 @@
 .img-circle {
   border-radius: 23%;
   overflow: hidden;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   padding: 15px;
   background-color: rgba(219, 78, 50, 0.88);
-  float: right;
-
+  margin-left: 500px;
+  /*margin-top: 15px;*/
 }
+
 
 </style>
 </head>
 
 <body>
+  <!-- Fixed navbar -->
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="col-xs-4">
 
-  <div class="body">
-  <div class="row">
+        <div class="navbar-header">
+          <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
 
-      <!--  <div class="container-head">
-      <div class="header">-->
-      <div class="col-xs-12 col-md-8">
-        <!-- <div class="masthead"> -->
-        <h2 class="text-muted">Beatriz Bustamante</h2>
-        <h3 class="contact-info"> Full Stack Web  Developer/Product Manager</h3>
-        <div class="contact-info"><h4>bzbustamante@gmail.com<br>305-4847095</h4>
+            </button> -->
+
+           <div class="navbar-brand">
+           <h2 class="text-name">Beatriz Bustamante</h2>
+           <h4 class="contact-info"> Full Stack Web  Developer/Product Manager</h4>
+           <h4 class="contact-info">bzbustamante@gmail.com<br>305-4847095</h4>
+
+         </div>
         </div>
       </div>
+      <div class="col-xs-4">
+       <div style="text-align:center">
+         <a href="https://github.com/beatrizbu" class="btn-gh">
+           <i class="icon-github"></i>
+         </a>
+
+         <a href="https://twitter.com/beatrizbu" class="btn-tw">
+           <i class="icon-twitter"></i>
+         </a>
+
+         <a href="https://www.linkedin.com/in/beatrizbustamante" class="btn-li">
+           <i class="icon-linkedin"></i>
+         </a>
+       </div>
+     </div>
+     <div class="col-xs-4">
+       <div id="navbar" class="nav navbar-nav navbar-right">
+            <img class='img-circle' src="BB_profile.jpg" alt="Beatriz Bustamante" height="200" width="200" float="right">
+       </div>
+     </div>
+<!--/.nav-collapse -->
+    </nav>
+  </div>
+
+   </div>
+
+
+  <!-- <div class="body">
+  <div class="row">
+
+
 
       <div class="col-xs-12 col-md-4">
         <img class='img-circle' src="BB_profile.jpg" alt="Beatriz Bustamante" height="150" width="200" float="right">
       </div>
 
     </div>
-  </div>
+  </div> -->
 
 
   <div class="row">
     <div class="info">
-      <p><h4> I am interested in combining programming languages, product development, and my own cultural background to create and lead the development of products that impact consumers in their daily lives. Passionate about languages, outdoor activities and plants. </p></h4>
+      <p><h4> Learning how to code has given me the ability to explain and understand the technical challenges of a product during the development cycle. I am a full stack web developer with over 14 years of experience developing digital solutions, media verticals and products. I am interested in combining programming languages, product development, and my own cultural background to create and develop products that impact consumers in their daily lives. </p></h4>
     </div>
-    <div class="col-xs-12">
-      <div style="text-align:center">
-        <a href="https://github.com/beatrizbu" class="btn-gh">
-          <i class="icon-github"></i>
-        </a>
 
-        <a href="https://twitter.com/beatrizbu" class="btn-tw">
-          <i class="icon-twitter"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/beatrizbustamante" class="btn-li">
-          <i class="icon-linkedin"></i>
-        </a>
-      </div>
-    </div>
   </div>
     <!-- Example row of columns -->
     <div class="container-fluid">
       <div class="section1">
-        <h3><a href="http://www.hootie-hoo.co/">HOOTIE-HOO</a></h3>
+        <h3><a href="http://www.hootie-hoo.co/">Hootie-Hoo</a></h3>
         <h4 id="blue">Final project Wyncode 2015 - A geolocation based chat application that connects people in a given venue through text based games.</h4>
         <div class="container-fluid">
           <div id="hootie-img">
@@ -153,7 +178,11 @@
 
 <!-- /container -->
 <script src="js.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
