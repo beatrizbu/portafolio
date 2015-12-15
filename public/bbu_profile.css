@@ -4,8 +4,8 @@
 
 .navbar-default {
     /*background-color: rgba(18, 172, 238, 0.54)!important;*/
-    background-color: #949290 !important;
-    border-color: #949290 !important;
+    background-color: #BFBFBF !important;
+    border-color: #BFBFBF !important;
     height: 230px;
   }
 
@@ -32,7 +32,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #949290!important;
+  background-color: #BFBFBF!important;
 }
 
 body {}
